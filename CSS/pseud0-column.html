@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type='text']{
+            height: 50px;
+            width:50px;
+            border-radius:100px;
+            font-size: 35px;
+        }
+        input[type='text']:focus{
+            width: 40%;
+            background-color: darkgray;
+            color: white;
+            transition: width 0.7s linear;
+        } 
+        h1:first-child{
+            background-color: grey;
+            color: white;
+        }
+        h1:last-child{
+            color:forestgreen
+        }
+         h1:nth-child(2){
+            color: blueviolet;
+        }
+        h1:nth-child(even){
+            color: orangered;
+        } 
+
+        div{
+            color:black;
+        }
+        :not(div){
+            color:red;
+            font-size:2rem
+        }
+        .images img {
+            height: 500px;
+            width: 450px;
+         }
+         img:not(img:hover){
+            filter:blur(5px)
+         }
+        :is(p.para,h1.head){
+            color:brown;
+        }
+         input[type='radio']:checked+label{
+            color:green;
+         }
+    </style>
+</head>
+<body>
+    <!-- <a href="https://www.google.com">Google</a>
+    <a href="https://www.facebook.com">Facebook</a>
+    <a href="https://www.twitter.com">Twitter</a>
+    <a href="https://www.whatsapp.com">Whatsapp</a>
+    <a href="https://www.instagram.com">Instagram</a>
+    <a href="https://www.snapchat.com">Snapchat</a>
+    <a href="https://www.linkedin.com">Linkedin</a> -->
+
+    <!-- <input type="text" name="txt" id="txt"> -->
+
+    <!-- <h1>This is h1 first element</h1>
+    <h1>This is h1 second element</h1>
+    <h1>This is h1 third element</h1>
+    <h1>This is h1 fourth element</h1>
+    <h1>This is h1 fifth element</h1>
+    <h1>This is h1 sixth element</h1>
+    <h1>This is h1 seventh element</h1>
+    <h1>This is h1 eighth element</h1>
+    <h1>This is h1 nineth element</h1>
+    <h1>This is h1 tenth element</h1> -->
+
+    <!-- <h1>This is red colored h1</h1>
+    <p>This is red colored paragragh</p>
+    <div>This is black div</div> -->
+
+    <div class="images">
+        <img src="https://wallpapercave.com/wp/wp193808.jpg">
+        <img src="https://wallpapercave.com/wp/wp193808.jpg">
+        <img src="https://wallpapercave.com/wp/wp193808.jpg">
+        <img src="https://wallpapercave.com/wp/wp193808.jpg">
+        <img src="https://wallpapercave.com/wp/wp193808.jpg">
+        <img src="https://wallpapercave.com/wp/wp193808.jpg">
+        <img src="https://wallpapercave.com/wp/wp193808.jpg">
+        <img src="https://wallpapercave.com/wp/wp193808.jpg">
+    </div>
+
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nulla.</p>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim iure culpa quo, recusandae veritatis natus hic alias inventore harum veniam incidunt minima eum necessitatibus sit provident nemo quis, saepe voluptate accusamus doloribus aspernatur dicta. Ab labore, ad perferendis vitae, perspiciatis hic consequuntur, minima nobis magni rerum a similique velit nam.</p>
+        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, repellendus!</h1>
+        <h1 class="head">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit amet officiis vero atque beatae tenetur? Consectetur vel error beatae aut saepe laboriosam! Iure aperiam asperiores repellendus libero. Nihil, cum ad.</h1> -->
+
+
+        <!-- <hr color="'green">
+        <p>Choose your gender: </p>
+        <input type="radio" name="gender" id="male"><label for="male">Male</label>
+        <input type="radio" name="gender" id="female"><label for="female">Female</label>
+        <input type="radio" name="gender" id="others"><label for="others">Others</label> -->
+    
+</body>
+</html>

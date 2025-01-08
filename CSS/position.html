@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height:80vh;
+            width:80%;
+            background-color: lightgreen;
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+            gap:20px;
+        }
+        .child{
+            height: 200px;
+            width: 200px;
+            /* border: solid; */
+            box-shadow: 1px 1px 5px 5px inset rgba(0,0,0,0.499);
+            font-size: 3rem;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            color:white;
+            font-weight: 900;
+        }
+        .child:nth-child(1){
+            background-color: darkcyan;
+            /* position:static;
+            top:200px; */
+        }
+        .child:nth-child(2){
+            background-color: darkgoldenrod;
+            position: absolute;
+            top:200px;
+            /* top:0;
+            right:0; */
+            /* right:0;
+            bottom: 0; */
+            /* top: 50%;
+            left:50%; */
+            /* transform: translate(-50%,-50%); */
+        }
+        .child:nth-child(3){
+            background-color: darkmagenta;
+            /* margin-top: 100px; */
+            position:relative;
+            top: 100px;
+            left:100px; 
+            
+
+        }
+        .child:nth-child(4){
+            background-color: darkolivegreen;
+            /* position: fixed;
+            top: 0px;
+            left:100px; */
+            /* position: fixed;
+            right:0;
+            bottom: 0; */
+        }
+        .sub-main{
+            background-color: blueviolet;
+        }
+        .sub-main1{
+            background-color: brown;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+    </div>
+    <div class="main sub-main"></div>
+    <div class="main sub-main1"></div>
+</body>
+</html>

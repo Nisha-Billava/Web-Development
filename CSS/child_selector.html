@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grand-parent>h1{
+            color: brown;
+        }
+        .grand-parent>p{
+            color: blueviolet;
+        }
+        .parent>h1{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="grand-parent">
+        <h1>This is direct child of grand parent</h1>
+        <p>This is direct child of GP</p>
+        <div class="parent">
+            <h1>This is direct child of Parent</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, exercitationem.</p>
+        </div>
+    </div>
+</body>
+</html>

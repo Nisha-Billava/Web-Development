@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightgrey;
+        }
+        div{
+            /* border: 2px black solid; */
+            box-shadow: 10px 10px 15px black, -10px -10px 15px black;
+        }
+        .main{
+            margin:100px 0px 0px 200px;
+            height:80vh;
+            width:80%;
+            background: linear-gradient(blue,black);
+            display:flex;
+            /* flex-direction: row;
+            flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse; */
+            flex-wrap: wrap;
+
+            /* align-items: flex-start; */
+            align-items: center;
+            /* align-items:flex-end; */
+
+            justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: center;
+            gap:50px;
+
+        }
+        .child{
+            height: 180px;
+            width: 180px;
+            font-size:2rem;
+        }
+        .child:nth-child(1){
+            background-color: springgreen;
+        }
+        .child:nth-child(2){
+            background-color: darkviolet;
+            /* flex-grow: 0;
+            flex-grow: 1; */
+        }
+        .child:nth-child(3){
+            background-color:brown;
+            /* flex-basis: 40px; */
+        }
+        .child:nth-child(4){
+            background-color:lightpink;
+            flex-shrink:500;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+    </div>
+</body>
+</html>
